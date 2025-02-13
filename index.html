@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="tliwind css.js"></script>
+</head>
+<body >
+
+       <!-- ......header..... -->
+       <!-- class="bg-[url('bg2.jpg')] bg-cover h-[600px] bg-center bg-no-repeat opacity-0.4" -->
+
+        <nav>
+            <div class="container bg-[#336666] flex justify-between items-center p-5 ">
+                <img class="m-5" src="images/logo-light.png" alt="Logo" />
+                <div class="hidden md:flex space-x-4">
+                    <ul class="flex space-x-4 text-white pr-12">
+                        <li class="hover:text-orange-400 hover:text-xl transition"><a href="Home">Home</a></li>
+                        <li class="hover:text-orange-400"><a href="home">About</a></li>
+                        <li class="hover:text-orange-400"><a href="home">Services</a></li>
+                        <li class="hover:text-orange-400"><a href="home">Contact Us</a></li>
+                    </ul>
+                    <a class="text-white text-xl hover:text-black hover:underline  bg-orange-200 hover:bg-white py-2 px-3 rounded-full text-center" href="">Get Start</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        
+            <div id="mobile-menu" class="hidden md:hidden bg-[#336666]">
+                <ul class="flex flex-col space-y-4 text-white p-5">
+                    <li class="hover:text-orange-400"><a href="home">Home</a></li>
+                    <li class="hover:text-orange-400"><a href="home">About</a></li>
+                    <li class="hover:text-orange-400"><a href="home">Services</a></li>
+                    <li class="hover:text-orange-400"><a href="home">Contact Us</a></li>
+                    <li><a class="text-white text-xl hover:text-orange-300 hover:underline" href="">Get Started</a></li>
+                </ul>
+            </div>
+        
+            <script>
+                const button = document.getElementById('mobile-menu-button');
+                const menu = document.getElementById('mobile-menu');
+        
+                button.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            </script>
+               
+                <!-- text 1 -->
+            <div class="text  justify-around  items-center mt-32 ">
+                <h1 class="ml-20  font-bold text-4xl">Eat a <span class="text-orange-300">Health</span>  Diet <br> to Help your Body <br> stat fit </h1>
+                <p class="ml-20   font-light text-xl pb-5 pt-3">Lorem ipsum dolor sit amet consectetur<br> adipisicing elit.</p>
+                <a  class="bg-[#336666] text-white text-xl px-3 py-1  ml-40  rounded-full hover:bg-orange-400 hover:text-white" href="">Order now</a>
+            </div>
+           
+
+        </nav> 
+        <!-- secvices  section-->
+        <div class="service bg-gray-200 py-20">
+            <h1 class="text-3xl md:text-4xl font-bold text-center mt-10 md:mt-20">Our Services</h1>
+            <p class="text-base md:text-xl font-thin text-center mx-4">
+                uis sed odio sit amet nibh vulputate cursus a sit amet mauris morbi accumsan<br>
+                ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+            </p>
+        </div>
+   
+  
+    <!-- boxs section -->
+
+    <div class="container mt-20  grid grid-cols-1 sm:grid-cols-3 gap-5 sm:flex-col  text-center mr-5 pb-10 ">
+        <div class="shadow-lg hover:scale-90 transition bg-light-300 bg-white" data-aos="flip-left">
+           <div class="container  flex justify-center my-2">
+            <ion-icon class="bg-orange-300 text-2xl p-2 text-white" name="beer-outline"></ion-icon>
+           </div>
+            <h2 class="text-5 font-bold text-center ">anivation skills</h2>
+            <p class="text-3 font-thin text-center">Lorem ipsum dolor sit amet consectetur<br>
+                Lorem ipsum dolor sit amet consectetur<br>
+                Lorem ipsum dolor sit amet consectetur<br>.</p>
+        </div>
+    
+        <div class="shadow hover:scale-90 transition bg-white" data-aos="flip-left">
+            <div class="container  flex justify-center my-2">
+                <ion-icon class="bg-orange-300 text-2xl p-2 text-white" name="fast-food-outline"></ion-icon>
+              </div>
+             <h2 class="text-5 font-bold text-center ">anivation skills</h2>
+             <p class="text-3 font-thin text-center">Lorem ipsum dolor sit amet consectetur<br>
+                Lorem ipsum dolor sit amet consectetur<br>
+                Lorem ipsum dolor sit amet consectetur<br>.</p> 
+         </div>
+    
+         <div class="shadow hover:scale-90 transition bg-white" data-aos="flip-left">
+            <div class="container  flex justify-center my-2">
+                <ion-icon  class="bg-orange-300 text-2xl p-2 text-white"  name="pizza-outline"></ion-icon></div>
+             <h2 class="text-5 font-bold text-center ">anivation skills</h2>
+             <p class="text-3 font-thin text-center">Lorem ipsum dolor sit amet consectetur<br>
+                Lorem ipsum dolor sit amet consectetur<br>
+                Lorem ipsum dolor sit amet consectetur<br>.</p>
+         </div>
+       
+      </div> 
+    </div>
+    <!-- ......search btn...... -->
+    <div class="serch flex justify-center  ">
+        <input class="border-2 border-black   py-2 mt-20 w-3/5  rounded-full text-center w-full md:w-3/5" type="text" value="" placeholder="Write what you are looking for here">
+    </div>
+     <div class="srch flex justify-center pt-7">
+       <a class="bg-[#336666] text-white text-center w-1/5 w-full md:w-1/5 justify-center py-2 px-2 shadow-lg rounded-lg hover:bg-orange-300" href="background.jpg">Search</a>
+     </div>
+
+      <!--  kind of foods -->
+       
+      <div class="work bg-gray-200 mt-20 py-20">
+        <div class="service flex flex-col sm:items-center text-center mt-10 px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Reliable recipes from a chef’s kitchen</h2>
+            <p class="text-base sm:text-xl font-thin mt-4 max-w-prose text-gray-600">
+                Duis aute irure dolor in reprehenderit volupte velit esse cillum<br> 
+                fugiat pariatur occaecat cupidatat proident culpa.
+            </p>
+        </div>
+    </div>
+
+          <!-- links -->
+            <div class="links text-center mt-20">
+                <ul class="flex justify-center space-x-5 flex flex-col md:flex-row text-2xl md:text-xl ">
+                    <li><a href="#">All /</a></li>
+                    <li><a href="#">Dinner /</a></li>
+                    <li><a href="#">fruit /</a></li>
+                    <li><a href="#">Planning</a></li>
+                </ul>
+            </div>
+
+            <div class="images grid grid-cols-1 md:grid-cols-3 gap-4 mt-20 mx-20 max-w-screen-2xl justify-center ">
+                 <div class="img1">
+                    <img  src="images/hand.jpg" alt="" class="w-full h-auto hover:scale-90 transition  rounded-lg" data-aos="flip-left">
+                    <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, distinctio!</p>
+                 </div>
+
+                 <div class="img2">
+                    <img src="images/bb.jpg" alt="" class="w-full h-auto hover:scale-90 transition rounded-lg" data-aos="flip-left">
+                    <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, distinctio!</p>
+                 </div>
+
+                 <div class="img3">
+                    <img src="images/conto.jpg" alt="" class="w-full h-auto hover:scale-90 transition rounded-lg" data-aos="fade-left">
+                    <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, distinctio!</p>
+                 </div>
+
+                 <div class="img4">
+                    <img src="images/water.jpg" alt="" class="w-full h-auto hover:scale-90 transition rounded-lg" data-aos="fade-right">
+                    <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, distinctio!</p>
+                 </div>
+
+                 <div class="img5">
+                    <img src="images/limon.jpg" alt="" class="w-full h-auto hover:scale-90 transition rounded-lg" data-aos="fade-left">
+                    <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, distinctio!</p>
+                 </div>
+
+                 <div class="img6">
+                    <img src="images/drink.jpg" alt="" class="w-full h-auto hover:scale-90 transition rounded-lg" data-aos="fade-right">
+                    <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, distinctio!</p>
+                 </div>
+                  </div>
+      </div>
+      
+
+      <!-- cards -->
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-11/12 my-20 mx-auto gap-6">
+        <!-- box 1 -->
+        <div class="box3 border-8  p-6 bg-[#336666]"data-aos="zoom-out-up">
+            <h5 class="text-white text-center text-2xl mt-10">Fruit</h5>
+            <h1 class="text-center text-white font-normal pt-10 text-5xl">100% </h1>
+            <p class="text-center text-white pt-5">Free Delivery</p>
+    
+            <div class="btn bg-[#1E293B] rounded-lg mt-10 py-2 text-center text-white hover:bg-[#ffb703] border border-blue-500 w-full">
+                <a href="cards.html">Purchase</a>
+            </div>
+            
+            <div class="mt-6 pb-6">
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>100  of Reliable</h3>
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>Option to add members</h3>
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>Extra member benefits</h3>
+            </div>
+        </div>
+    
+        <!-- box 2 -->
+        <div class="box3 border-8 border-orange-200 p-6 bg-[#336666]" data-aos="fade-down-right">
+            <h5 class="text-white text-center text-2xl mt-10">Standard</h5>
+            <h1 class="text-center text-white font-normal pt-10 text-5xl">Discount</h1>
+            <p class="text-center text-white pt-5">$3.99/Month</p>
+    
+            <div class="btn bg-orange-300 rounded-lg mt-10 py-2 text-center text-white hover:bg-[#3e3e3e] border border-blue-500 w-full">
+                <a href="cards.html">Purchase</a>
+            </div>
+    
+            <div class="mt-6 pb-6">
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>200 GB of storage</h3>
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>Option to add members</h3>
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>Extra member benefits</h3>
+            </div>
+        </div>
+    
+        <!-- box 3 -->
+        <div class="box3 border-8  p-6 bg-[#336666]" data-aos="fade-left">
+            <h5 class="text-white text-center text-2xl mt-10">Vegetables</h5>
+            <h1 class="text-center text-white font-normal pt-10 text-5xl">Chicken</h1>
+            <p class="text-center text-white pt-5">$8.99/Month</p>
+    
+            <div class="btn bg-[#1E293B] rounded-lg mt-10 py-2 text-center text-white hover:bg-[#ffb703] border border-blue-500 w-full">
+                <a href="cards.html">Purchase</a>
+            </div>
+    
+            <div class="mt-6 pb-6">
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>2TB of storage</h3>
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>Option to add members</h3>
+                <h3 class="text-white text-center pt-2"><ion-icon class="mx-1" name="checkmark-outline"></ion-icon>Extra member benefits</h3>
+            </div>
+        </div>
+    </div>
+      
+
+
+               <!-- log in -->
+    <div class="form w-11/12 flex mx-auto w-11/12 h-screen sm:h-auto "  data-aos="flip-left">
+        <div class="login shadow-2xl bg-white w-[2000px]">
+            <h3 class="text-center font-bold pt-10 text-4xl">Log In</h3>
+            <p class="text-center pt-10">Log in to your account to upload or download<br> pictures, videos or music</p>
+
+            <div class="btn mt-10 flex justify-center">
+            <input class="shadow-lg py-4 px-3 rounded-lg border-4 border-black-100 w-[300px] " type="text" placeholder="Enter your email Address">
+             
+            </div>
+            <div class="forget flex flex justify-center space-x-10 mt-12">
+                <h4 class="mt-4">Forgot password</h4>
+               <div class="next bg-[#336666] text-white flex py-2 px-3 space-x-4 rounded-lg">
+               <a href="index.html"> <p class="text-2xl">Next</p></a>
+                <a href=""><ion-icon class="pt-2 w-9" name="arrow-forward-outline"></ion-icon></a>
+               </div>
+            </div>
+
+               <div class=" border border-black-500 mt-4">
+
+               </div>
+
+               <div class="icons flex  flex flex-col md:flex-row gap-8 justify-center items-center sm:flex mt-12 ">
+                <div class="box1 hover:scale-90 transition" >
+                    <a class="shadow-lg py-3 px-4  border border-[#3e3e3e]" href="#">
+                        <ion-icon name="cart-outline"></ion-icon> Add To Cart
+                    </a>
+                </div>
+    
+                <div class="box2 hover:scale-90 transition">
+                    <a class="shadow-lg py-3 px-3 border border-[#3e3e3e]" href="#">
+                        <ion-icon name="heart-outline"></ion-icon> Add To Wishlist
+                    </a>
+                </div>
+            </div>
+
+             
+
+        </div>
+        <div class="me hidden sm:flex">
+            <a href=""><img class="h-screen w-[2000px]" src="images/lastlogin.jpg" alt=""></a>
+        </div>
+        
+    </div>
+    <div class="footer text-center bg-[#3e3e3e] py-4 text-white mt-10">
+        <p>ciopyright &copy 2025 By Abdi nasir mohamed Atoosh</p>
+    </div>
+      
+    
+      
+
+
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
